@@ -1,6 +1,6 @@
 import math
 
-s = [17, 8, 17, 8, 13, 17, 13, 8]
+s = [1.61, 1.94, 2.62, 2.37, 3.09, 3.20, 2.53, 1.89]
 n = len(s)
 total = 0
 totalSquare = 0
@@ -13,11 +13,15 @@ avg = total / n
 #Squared mean
 for i in range(n):
 	totalSquare = (totalSquare + (s[i]**2))
-
 avgSquare = totalSquare / n
 
-standard = math.sqrt((totalSquare - ((total**2)/n))/(n-1))
+#Variance
+vari = (totalSquare - ((total**2)/n))/(n-1)
 
-print('standard deviation = ', standard)
+#Standard Deviation
+standard = math.sqrt(vari)
+
 print('mean = ', avg)
 print('range = ', n)
+print('variance = ', vari)
+print('standard deviation = ', standard)
