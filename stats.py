@@ -47,6 +47,15 @@ else:
 
 	q_range = q3 - q1
 
+	#outliers
+	out1 = q3 + q_range
+	out2 = q1 - q_range
+	outliers = []
+
+	for j in range(n):
+		if s[j] > out1 or s[j] < out2:
+			outliers.append(s[j])
+
 	print('list = ', s)
 	print('Ammount = ', n)
 	print('total = ', total)
@@ -59,5 +68,6 @@ else:
 	print('Q1 = ', q1)
 	print('Q3 = ', q3)
 	print('Interquartile range = ', q_range)
+	print('Outliers = ', outliers)
 
 
