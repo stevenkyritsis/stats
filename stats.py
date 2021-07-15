@@ -38,11 +38,11 @@ else:
 		ranges = maximum - minimum
 
 	#Quartiles
-	q1_position = int((n-1)/4)
+	q1_position = int((n+1)/4)
 	q1 = s[q1_position]
 
 
-	q3_position = int((3*(n-1))/4)
+	q3_position = int((3*(n+1))/4)
 	q3 = s[q3_position]
 
 	q_range = q3 - q1
