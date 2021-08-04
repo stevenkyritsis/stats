@@ -20,7 +20,7 @@ def greater_than():
 	return result3
 
 user = 0
-11
+
 while user != 4:
 	print('1. P(X=x)\n')
 	print('2. P(X<x)\n')
