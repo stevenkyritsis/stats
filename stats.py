@@ -15,8 +15,9 @@ else:
 		print(s[m]) 
 
 	#Mean
-	for i in range(n):
-		total = float(total + s[i])
+	#for i in range(n):
+		#total = float(total + s[i])
+	total = sum(s)
 	avg = total / n
 
 	#Squared mean
